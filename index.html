@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - Pupuk Indonesia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f3f4f6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1rem;
+        }
+
+        .content-wrapper {
+            max-width: 64rem;
+            width: 100%;
+        }
+
+        .logo-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .logo {
+            width: 128px;
+            height: 128px;
+            object-fit: contain;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .mascot-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mascot {
+            width: 128px;
+            height: 128px;
+            object-fit: contain;
+        }
+
+        .text-content {
+            text-align: center;
+            color: #1f2937;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #e5e7eb;
+            border: 1px solid #d1d5db;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .status-badge i {
+            color: #4b5563;
+            font-size: 0.875rem;
+        }
+
+        .main-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #111827;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .description {
+            font-size: 1.125rem;
+            color: #4b5563;
+            line-height: 1.75;
+            max-width: 32rem;
+            margin: 0 auto 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            max-width: 28rem;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 0.75rem;
+            padding: 1rem;
+        }
+
+        .stat-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-header i {
+            color: #4b5563;
+            font-size: 1.125rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #111827;
+        }
+
+        .contact-section {
+            background-color: #e5e7eb;
+            border: 1px solid #d1d5db;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        .contact-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .contact-text h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-text p {
+            color: #4b5563;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #4b5563;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            flex-shrink: 0;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #374151;
+        }
+
+        .whatsapp-btn i {
+            font-size: 1.125rem;
+        }
+
+        .whatsapp-btn .arrow {
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-btn:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        @media (min-width: 768px) {
+            .main-title {
+                font-size: 3.75rem;
+            }
+
+            .contact-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .contact-text {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="content-wrapper">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="/images/logo_pi_panjang.png" alt="Pupuk Indonesia" class="logo">
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Mascot -->
+                <div class="mascot-wrapper">
+                    <img src="/images/maaf-icon.png" alt="Maintenance mascot" class="mascot">
+                </div>
+
+                <!-- Text Content -->
+                <div class="text-content">
+                    <div class="status-badge">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Status Pemeliharaan</span>
+                    </div>
+
+                    <h1 class="main-title">
+                        <span id="typed-text"></span>
+                    </h1>
+
+                    <p class="description">
+                        Kami sedang melakukan upgrade dan optimasi sistem untuk memberikan pengalaman terbaik kepada Anda. Terima kasih atas kesabaran dan dukungan Anda.
+                    </p>
+
+                    <!-- Stats -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <i class="fa-regular fa-clock"></i>
+                                <span class="stat-label">Estimasi</span>
+                            </div>
+                            <p class="stat-value" id="estimation">2-4 Jam</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span class="stat-label">Status</span>
+                            </div>
+                            <p class="stat-value">Berlangsung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <h3>Ada Pertanyaan?</h3>
+                        <p>Hubungi tim support kami melalui WhatsApp untuk bantuan lebih lanjut</p>
+                    </div>
+                    <a href="https://wa.me/628114549000" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Hubungi via WhatsApp</span>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Typing animation
+        const fullText = "Kami sedang melakukan pemeliharaan sistem";
+        const typedTextElement = document.getElementById('typed-text');
+        let index = 0;
+
+        function typeText() {
+            if (index < fullText.length) {
+                typedTextElement.textContent = fullText.slice(0, index + 1);
+                index++;
+                setTimeout(typeText, 50);
+            }
+        }
+
+        // Start typing animation when page loads
+        window.addEventListener('load', () => {
+            typeText();
+        });
+    </script>
+</body>
+</html>
